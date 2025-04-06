@@ -55,6 +55,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = "portfolio.urls"
@@ -85,12 +86,13 @@ MESSAGE_TAGS = {
 }
 
 
-# Static files configuration
 STATIC_URL = '/static/'
-# Optional, if you are placing static files globally
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-# Required for collectstatic (especially for production)
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# Optional: if you also use STATICFILES_DIRS for dev
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+
 
 
 WSGI_APPLICATION = "portfolio.wsgi.application"
