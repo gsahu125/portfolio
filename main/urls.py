@@ -4,7 +4,6 @@ from . import views
 
 urlpatterns = [
     # setup routes for admin
-    # path("admin/", admin.site.urls),
     # include app level urls here
     path("", include("portfolio.urls")),
     
