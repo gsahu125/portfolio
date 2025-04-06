@@ -8,7 +8,9 @@
 
 <div class="mt-5">
     <div class="card border-0">
-        <img src="/static/images/profile_banner.jpg" class="card-img-top rounded" alt="Gajendra Kumar Sahu">
+
+        {% load static %}
+        <img src="{% static 'images/profile_banner.jpg' %}" class="card-img-top rounded" alt="Gajendra Kumar Sahu">
 
         <div class="card-body px-4 py-3">
             <h2 class="card-title text-center mb-4">👋 Welcome to My Portfolio</h2>

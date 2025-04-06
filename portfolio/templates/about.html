@@ -3,7 +3,8 @@
 {% block content %}
 <div class="row align-items-center mb-5">
     <div class="col-md-4 text-center">
-        <img src="/static/images/profile2.jpg" class="img-fluid rounded-circle shadow" alt="Gajendra Kumar Sahu">
+        {% load static %}
+        <img src="{% static 'images/profile2.jpg' %}" class="img-fluid rounded-circle shadow" alt="Gajendra Kumar Sahu">
     </div>
     <div class="col-md-8">
         <h2>About Me</h2>

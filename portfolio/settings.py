@@ -87,9 +87,11 @@ MESSAGE_TAGS = {
 
 # Static files configuration
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'portfolio/static')  # Allows Django to find static files
-]
+# Optional, if you are placing static files globally
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+# Required for collectstatic (especially for production)
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 
 WSGI_APPLICATION = "portfolio.wsgi.application"
 
