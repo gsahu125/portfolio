@@ -32,7 +32,7 @@ SECRET_KEY = "django-insecure-i%74yndak$2#@)(-mlg$31enklirb%e!(3nt&-8d&c03)w_qww
 DEBUG = True
 
 # ALLOWED_HOSTS = ['https://gajendrakumarsahu.onrender.com']
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://gajendrakumarsahu.onrender.com/', 'localhost', '127.0.0.1']
 
 
 # Application definition
